@@ -1,0 +1,13 @@
+# Bibliotecas para análise de dados
+pandas==2.2.1
+numpy>=1.23.0  # Recomendado para funcionar com pandas e scikit-learn
+
+# Visualização de dados
+seaborn==0.13.2
+matplotlib==3.8.4
+plotly==5.20.0
+
+# Machine Learning
+scikit-learn==1.4.1.post1
+
+pytest
