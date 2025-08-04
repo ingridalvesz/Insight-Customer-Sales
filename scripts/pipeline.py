@@ -1,7 +1,7 @@
 import logging
-from scripts.processing import preprocess_clientes, preprocess_vendas, merge_datasets
-from .ingestion import load_clientes, load_vendas 
-from .config import OUTPUT_TRUSTED
+from processing import preprocess_clientes, preprocess_vendas, merge_datasets
+from ingestion import load_clientes, load_vendas 
+from config import OUTPUT_TRUSTED
 from datetime import datetime
 
 # Configuração básica do logging
