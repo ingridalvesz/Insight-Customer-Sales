@@ -2,7 +2,7 @@
 import pandas as pd
 import numpy as np
 from pathlib import Path
-from config import REFINED_DIR
+from scripts.config import REFINED_DIR
 
 # src/dimensional.py
 def create_dimensional_models(df: pd.DataFrame):

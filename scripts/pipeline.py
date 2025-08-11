@@ -1,9 +1,9 @@
 import logging
 import pandas as pd
-from processing import preprocess_data
-from ingestion import load_clientes, load_vendas
-from dimensional import create_dimensional_models
-from config import OUTPUT_TRUSTED, REFINED_DIR
+from scripts.processing import preprocess_data
+from scripts.ingestion import load_clientes, load_vendas
+from scripts.dimensional import create_dimensional_models
+from scripts.config import OUTPUT_TRUSTED, REFINED_DIR
 
 # Configuração básica do logging
 def configure_logging():
