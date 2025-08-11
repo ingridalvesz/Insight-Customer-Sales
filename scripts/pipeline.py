@@ -1,54 +1,56 @@
 import logging
-from processing import preprocess_clientes, preprocess_vendas, merge_datasets
-from ingestion import load_clientes, load_vendas 
-from config import OUTPUT_TRUSTED
-from datetime import datetime
+import pandas as pd
+from processing import preprocess_data
+from ingestion import load_clientes, load_vendas
+from dimensional import create_dimensional_models
+from config import OUTPUT_TRUSTED, REFINED_DIR
 
 # Configuração básica do logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    datefmt='%Y-%m-%d %H:%M:%S'
-)
+def configure_logging():
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s [%(levelname)s] %(message)s',
+        datefmt='%Y-%m-%d %H:%M:%S'
+    )
+    return logging.getLogger()
 
 def run_pipeline():
-    logging.info("Iniciando a pipeline de processamento de dados.")
+    logger = configure_logging()
+    logger.info(" Iniciando pipeline de dados")
     
-    # Carregamento
-    logging.info("Carregando datasets de clientes e vendas.")
-    clientes = load_clientes()
-    vendas = load_vendas()
-    
-    # Pré-processamento
-    logging.info("Pré-processando dados dos clientes.")
-    clientes_clean = preprocess_clientes(clientes)
-    logging.info("Pré-processando dados das vendas.")
-    vendas_clean = preprocess_vendas(vendas)
-    
-    # Merge e salvamento
-    logging.info("Mesclando datasets.")
-    final_df = merge_datasets(clientes_clean, vendas_clean)
-    
-    logging.info(f"Salvando dataset final em: {OUTPUT_TRUSTED}")
-    final_df.to_csv(OUTPUT_TRUSTED, index=False)
-    
-    logging.info("[SUCESSO] Pipeline executada com êxito.")
-    logging.info(f"[ESTATÍSTICAS] Registros: {len(final_df)} | Colunas: {len(final_df.columns)}")
+    try:
+        # Etapa 1: Extração
+        logger.info("📥 Carregando dados brutos")
+        clientes = load_clientes()
+        vendas = load_vendas()
+        logger.info(f"✅ Dados carregados | Clientes: {len(clientes)} linhas | Vendas: {len(vendas)} linhas")
+        
+        # Etapa 2: Transformação
+        logger.info("🔄 Processando e combinando datasets")
+        df_final = preprocess_data(clientes, vendas)
+        
+        
+        # Log de colunas para debug
+        logger.debug(f"Colunas no dataset trusted: {df_final.columns.tolist()}")
 
-
-def run_pipeline():
-    # Carregamento
-    clientes = load_clientes()
-    vendas = load_vendas()
-    
-    # Pré-processamento
-    clientes_clean = preprocess_clientes(clientes)
-    vendas_clean = preprocess_vendas(vendas)
-    
-    # Merge e salvamento
-    final_df = merge_datasets(clientes_clean, vendas_clean)
-    final_df.to_csv(OUTPUT_TRUSTED, index=False)
-    
-    print(f"[SUCESSO] Dataset final salvo em: {OUTPUT_TRUSTED}")
-    print(f"[ESTATÍSTICAS] Registros: {len(final_df)} | Colunas: {len(final_df.columns)}")
-    print(f"[DATA] Execução em: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        # Etapa 3: Carregamento
+        logger.info(f"💾 Salvando dados tratados em: {OUTPUT_TRUSTED}")
+        df_final.to_parquet(OUTPUT_TRUSTED, index=False)
+        
+        logger.info("🏗️ Construindo modelo dimensional")
+        fato, dim_tempo, dim_cliente, dim_produto = create_dimensional_models(df_final)
+        
+        logger.info(f"⭐ Modelo dimensional criado | "
+                f"Fato: {len(fato)} registros | "
+                f"Tempo: {len(dim_tempo)} | "
+                f"Cliente: {len(dim_cliente)} | "
+                f"Produto: {len(dim_produto)}")
+        
+        logger.info(f"💾 Salvando camada refined em: {REFINED_DIR}")
+                
+        logger.info(f"🎉 Pipeline concluída! | Registros: {len(df_final)} | Colunas: {len(df_final.columns)}")
+        logger.info(f"⏱️  Timestamp: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        
+    except Exception as e:
+        logger.error(f"❌ Erro na execução: {str(e)}")
+        raise
