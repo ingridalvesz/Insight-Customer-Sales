@@ -1,5 +1,6 @@
 # Bibliotecas para análise de dados
 pandas==2.2.1
+duckdb == 1.3.2
 numpy>=1.23.0  # Recomendado para funcionar com pandas e scikit-learn
 
 # Visualização de dados
