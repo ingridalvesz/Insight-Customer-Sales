@@ -1,9 +1,9 @@
 import logging
 import pandas as pd
-from scripts.processing import preprocess_data
-from scripts.ingestion import load_clientes, load_vendas
-from scripts.dimensional import create_dimensional_models
-from scripts.config import OUTPUT_TRUSTED, REFINED_DIR
+from processing import preprocess_data
+from ingestion import load_clientes, load_vendas
+from dimensional import create_dimensional_models
+from config import OUTPUT_TRUSTED, REFINED_DIR
 
 # Configuração básica do logging
 def configure_logging():
@@ -46,7 +46,7 @@ def run_pipeline():
                 f"Cliente: {len(dim_cliente)} | "
                 f"Produto: {len(dim_produto)}")
         
-        logger.info(f"💾 Salvando camada refined em: {REFINED_DIR}")
+        logger.info(f"Salvando camada refined em: {REFINED_DIR}")
                 
         logger.info(f"Pipeline concluída! | Registros: {len(df_final)} | Colunas: {len(df_final.columns)}")
         logger.info(f"Timestamp: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}")
@@ -54,3 +54,6 @@ def run_pipeline():
     except Exception as e:
         logger.error(f"X Erro na execução: {str(e)}")
         raise
+
+if __name__ == "__main__":
+    run_pipeline()
