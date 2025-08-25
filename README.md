@@ -24,7 +24,7 @@
 
 >- 📂 imagem    
     # Pasta com imagems dos gráficos obtidos
->- 🗎 dataia.ipynb   
+>- 🗎 data_analysis_sql.ipynb
     # Aquivo Notebook com toda a análise
 >- 🗎 README.md     
     # Arquivo com a descrição do projeto
