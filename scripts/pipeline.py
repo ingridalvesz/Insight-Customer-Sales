@@ -20,13 +20,13 @@ def run_pipeline():
     
     try:
         # Etapa 1: Extração
-        logger.info("📥 Carregando dados brutos")
+        logger.info("Carregando dados brutos")
         clientes = load_clientes()
         vendas = load_vendas()
-        logger.info(f"✅ Dados carregados | Clientes: {len(clientes)} linhas | Vendas: {len(vendas)} linhas")
+        logger.info(f"Dados carregados | Clientes: {len(clientes)} linhas | Vendas: {len(vendas)} linhas")
         
         # Etapa 2: Transformação
-        logger.info("🔄 Processando e combinando datasets")
+        logger.info("Processando e combinando datasets")
         df_final = preprocess_data(clientes, vendas)
         
         
@@ -34,13 +34,13 @@ def run_pipeline():
         logger.debug(f"Colunas no dataset trusted: {df_final.columns.tolist()}")
 
         # Etapa 3: Carregamento
-        logger.info(f"💾 Salvando dados tratados em: {OUTPUT_TRUSTED}")
+        logger.info(f"Salvando dados tratados em: {OUTPUT_TRUSTED}")
         df_final.to_parquet(OUTPUT_TRUSTED, index=False)
         
-        logger.info("🏗️ Construindo modelo dimensional")
+        logger.info("Construindo modelo dimensional")
         fato, dim_tempo, dim_cliente, dim_produto = create_dimensional_models(df_final)
         
-        logger.info(f"⭐ Modelo dimensional criado | "
+        logger.info(f"Modelo dimensional criado | "
                 f"Fato: {len(fato)} registros | "
                 f"Tempo: {len(dim_tempo)} | "
                 f"Cliente: {len(dim_cliente)} | "
@@ -48,9 +48,9 @@ def run_pipeline():
         
         logger.info(f"💾 Salvando camada refined em: {REFINED_DIR}")
                 
-        logger.info(f"🎉 Pipeline concluída! | Registros: {len(df_final)} | Colunas: {len(df_final.columns)}")
-        logger.info(f"⏱️  Timestamp: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        logger.info(f"Pipeline concluída! | Registros: {len(df_final)} | Colunas: {len(df_final.columns)}")
+        logger.info(f"Timestamp: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}")
         
     except Exception as e:
-        logger.error(f"❌ Erro na execução: {str(e)}")
+        logger.error(f"X Erro na execução: {str(e)}")
         raise
