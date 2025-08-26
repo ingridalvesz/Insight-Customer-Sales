@@ -4,17 +4,13 @@
   <img src="imagem/Mercatto Brasil.png" alt="Descrição da imagem">
 </p>
 
-## Este repositório contém um projeto de análise de dados e aprendizado de máquina utilizando Python. O objetivo é aplicar técnicas de ciência de dados em um conjunto de dados para extrair insights e treinar modelos preditivos.
+## Resumo do Projeto
 
-# Objetivo
+Este projeto consiste em uma análise de dados da Mercatto Brasil, com foco em vendas e comportamento do consumidor.
 
- A análise proposta busca oferecer uma visão clara sobre os principais indicadores de desempenho da Mercatto. O primeiro passo é identificar o mix de vendas por categoria, comparando o volume comercializado com a lucratividade, de forma a destacar quais segmentos trazem maior retorno e quais demandam ajustes estratégicos. 
+Para tal, foram utilizadas consultas em SQL para responder perguntas de negócio e o Power BI para a construção de dashboards interativos que permitem a visualização clara dos números estratégicos da empresa.
 
- Outro ponto importante é a avaliação do faturamento por região e cidade, permitindo compreender a concentração geográfica e identificar oportunidades de expansão em localidades com menor presença. Paralelamente, será explorado o perfil dos clientes, considerando fatores como idade, gênero e distribuição regional, a fim de direcionar campanhas e fortalecer o relacionamento com o público. 
-
- Além disso, a análise envolve o estudo dos métodos de pagamento mais utilizados, informação que possibilita adequar a experiência de compra e melhorar a conveniência do processo. A satisfação do cliente, expressa por uma nota média de 8,4, representa um diferencial competitivo para a Mercatto, que deve ser reconhecido e potencializado, reforçando a fidelização e a reputação da marca. 
-  
- Por fim, o trabalho propõe estratégias de crescimento, com foco na otimização das margens de lucro, na expansão da presença digital e no fortalecimento da competitividade, garantindo que a Mercatto avance de forma sustentável e inovadora no mercado.
+Nos arquivos do repositório, você também encontrará uma apresentação com os principais insights levantados durante a análise, como mix de vendas por categoria, perfil dos clientes, métodos de pagamento mais utilizados e concentração geográfica do faturamento.
 
 # 🛠️ Tecnologias Utilizadas
 
