@@ -4,8 +4,6 @@
   <img src="imagem/Mercatto Brasil.png" alt="Descrição da imagem">
 </p>
 
-
-
 ## Este repositório contém um projeto de análise de dados e aprendizado de máquina utilizando Python. O objetivo é aplicar técnicas de ciência de dados em um conjunto de dados para extrair insights e treinar modelos preditivos.
 
 # Objetivo
