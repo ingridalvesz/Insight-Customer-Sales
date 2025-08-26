@@ -57,7 +57,11 @@ Este projeto contém as seguintes pastas e arquivos:
 >- __Importação e limpeza dos dados__
 >- __Análise exploratória (EDA)__
 >- __Visualização dos dados__
->- __Modelagem (algoritmos de ML)__
+>- __Modelagem Dados__
+<p align="center">
+  <img src="imagem/Modelage Dados.mp4" alt="Descrição da imagem">
+</p> 
+
 >- __Avaliação de desempenho dos modelos__
 #
 ## `` 🧠 Resultados``
