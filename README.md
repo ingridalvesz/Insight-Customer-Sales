@@ -45,11 +45,11 @@ Este projeto contém as seguintes pastas e arquivos:
   - 🗎 `dimensional.py`
   - 🗎 `pipeline.py`
 
-####🗎 .gitignore
+##### 🗎.gitignore
 - **Descrição:** Arquivo para serem ignorados do GtiHub.
-####🗎 ReadMe.md
+##### 🗎 ReadMe.md
 - **Descrição:** Arquivo para descrever o trabalho dessa análise.
-####🗎 requirements.txt
+##### 🗎 requirements.txt
 - **Descrição:** Arquivo com as bibliotecas importadas do projeto.
 #
 ## ``📈 Etapas Realizadas``
