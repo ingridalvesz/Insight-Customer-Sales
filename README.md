@@ -47,22 +47,22 @@ Este projeto contém as seguintes pastas e arquivos:
 
 ##### 🗎 .gitignore
 - **Descrição:** Arquivo para serem ignorados do GtiHub.
-##### 🗎 ReadMe.md
+##### 🗎 README.md
 - **Descrição:** Arquivo para descrever o trabalho dessa análise.
 ##### 🗎 requirements.txt
 - **Descrição:** Arquivo com as bibliotecas importadas do projeto.
 #
 ## ``📈 Etapas Realizadas``
 
->- __Importação e limpeza dos dados__
->- __Análise exploratória (EDA)__
->- __Visualização dos dados__
->- __Modelagem Dados__
+- __Importação e Limpeza dos Dados(Python, SQL)__
+
+- __Visualização dos Dados (Power BI)__
+
+- __Modelagem Dados__
 <p align="center">
   <img src="imagem/Modelage Dados.gif" alt="Modelagem de dados Power BI" width="500">
 </p>
 
->- __Avaliação de desempenho dos modelos__
 #
 ## `` 🧠 Resultados``
 
