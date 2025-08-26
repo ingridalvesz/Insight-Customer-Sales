@@ -1,6 +1,6 @@
 # Projeto de Análise de Dados - Mercatto Brasil (2023)
 
-p align="center">
+<p align="center">
   <img src="imagem/Mercatto Brasil.png" alt="Descrição da imagem">
 </p>
 
