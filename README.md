@@ -59,8 +59,8 @@ Este projeto contém as seguintes pastas e arquivos:
 >- __Visualização dos dados__
 >- __Modelagem Dados__
 <p align="center">
-  <img src="imagem/Modelage Dados.mp4" alt="Descrição da imagem">
-</p> 
+  <img src="imagem/Modelage Dados.gif" alt="Modelagem de dados Power BI" width="500">
+</p>
 
 >- __Avaliação de desempenho dos modelos__
 #
