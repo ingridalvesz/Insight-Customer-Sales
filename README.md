@@ -12,17 +12,6 @@ Para tal, foram utilizadas consultas em SQL para responder perguntas de negócio
 
 Nos arquivos do repositório, você também encontrará uma apresentação com os principais insights levantados durante a análise, como mix de vendas por categoria, perfil dos clientes, métodos de pagamento mais utilizados e concentração geográfica do faturamento.
 #
-## ``🛠️ Tecnologias Utilizadas``
-
->- __Python (Jupyter Notebook)__
->- __SLQ__
->- __Power BI__
->- __Pandas__
->- __Path__
->- __Numpy__
->- __atplotlib e Seaborn__
->- __Scikit-learn__
-#
 ## ``📁 Estrutura do Projeto``
 
 Este projeto contém as seguintes pastas e arquivos:
@@ -56,19 +45,32 @@ Este projeto contém as seguintes pastas e arquivos:
 
 - __Importação e Limpeza dos Dados(Python, SQL)__
 
-- __Visualização dos Dados (Power BI)__
+- __Visualização dos Dados (Python, Power BI, PDF)__
 
 - __Modelagem Dados__
 <p align="center">
   <img src="imagem/Modelage Dados.gif" alt="Modelagem de dados Power BI" width="500">
 </p>
 
-#
-## `` 🧠 Resultados``
 
->- __Modelos testados: [Ex: Regressão Logística, KNN, Random Forest...]__
->- __Métricas de avaliação: [Ex: Acurácia, Precisão, Recall, F1-Score]__
->- __Conclusões e recomendações baseadas nos dados analisados.__
+A modelagem de dados desenvolvida no Power BI foi estruturada no formato estrela, com a tabela fato no centro e tabelas dimensão conectadas a ela:
+- Fato_Vendas: concentra os principais indicadores do negócio, como valor total, quantidade de itens, cashback, frete e avaliações das compras.
+- Dim_Cliente: traz informações demográficas e geográficas dos clientes, como idade, faixa etária, gênero, cidade, estado e região.
+- Dim_Produto: organiza os produtos vendidos por categoria e meio de pagamento.
+- Dim_Tempo: permite análises temporais, considerando datas completas, ano, mês, dia, semana e flag de fim de semana.
+
+
+#
+## ``🛠️ Ferramentas Utilizadas``
+
+>- __Python (Jupyter Notebook)__
+>- __SLQ__
+>- __Power BI__
+>- __Pandas__
+>- __Path__
+>- __Numpy__
+>- __atplotlib e Seaborn__
+>- __Scikit-learn__
 #
 
 ## ``📷  Imagems dos gráficos obtidos``
