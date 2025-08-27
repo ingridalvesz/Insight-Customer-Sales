@@ -43,7 +43,7 @@ Este projeto contém as seguintes pastas e arquivos:
 #
 ## ``📈 Etapas Realizadas``
 
-- ``Importação e Limpeza dos Dados(Python, SQL)``
+- ``Importação e Limpeza dos Dados(Jupyter Notebook, SQL)``
 <p align="center">
   <img src="imagem/Importação e Limpeza dos Dado.png" alt="Importação e Limpeza dos Dado" width="1200">
 </p>
