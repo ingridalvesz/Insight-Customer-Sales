@@ -47,7 +47,7 @@ Este projeto contém as seguintes pastas e arquivos:
 
 - __Visualização dos Dados (Power BI, Deshboard)__
 <p align="center">
-  <img src="imagem/Desh.gif" alt="Modelagem de dados Power BI" width="500">
+  <img src="imagem/Desh.gif" alt="Modelagem de dados Power BI" width="1200">
 </p>
 
 
