@@ -50,7 +50,7 @@ Este projeto contém as seguintes pastas e arquivos:
 
 # 
 
-- ``Visualização dos Dados (Power BI, Deshboard)``
+- ``Visualização dos Dados (Power BI - Deshboard)``
 <p align="center">
   <img src="imagem/Desh.gif" alt="Deshboard Power BI" width="1200">
 </p>
