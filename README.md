@@ -43,7 +43,7 @@ Este projeto contém as seguintes pastas e arquivos:
 #
 ## ``📈 Etapas Realizadas``
 
-- ``Importação e Limpeza dos Dados(Jupyter Notebook, SQL)``
+- ``Importação e Limpeza dos Dados(Python)``
 <p align="center">
   <img src="imagem/Importação e Limpeza dos Dado.png" alt="Importação e Limpeza dos Dado" width="1200">
 </p>
@@ -62,6 +62,7 @@ Este projeto contém as seguintes pastas e arquivos:
   <img src="imagem/Modelage Dados.gif" alt="Modelagem de dados Power BI" width="500">
 </p>
 
+#link para o deshboard
 
 A modelagem de dados desenvolvida no Power BI foi estruturada no formato estrela, com a tabela fato no centro e tabelas dimensão conectadas a ela:
 - Fato_Vendas: concentra os principais indicadores do negócio, como valor total, quantidade de itens, cashback, frete e avaliações das compras.
@@ -73,7 +74,8 @@ A modelagem de dados desenvolvida no Power BI foi estruturada no formato estrela
 #
 ## ``🛠️ Ferramentas Utilizadas``
 
->- __Python (Jupyter Notebook)__
+>- __Python__
+>- __Jupyter Notebook__
 >- __SLQ__
 >- __Power BI__
 >- __Pandas__
