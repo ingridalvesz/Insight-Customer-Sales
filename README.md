@@ -45,7 +45,11 @@ Este projeto contém as seguintes pastas e arquivos:
 
 - __Importação e Limpeza dos Dados(Python, SQL)__
 
-- __Visualização dos Dados (Python, Power BI, PDF)__
+- __Visualização dos Dados (Power BI, Deshboard)__
+<p align="center">
+  <img src="imagem/Desh.gif" alt="Modelagem de dados Power BI" width="500">
+</p>
+
 
 - __Modelagem Dados__
 <p align="center">
