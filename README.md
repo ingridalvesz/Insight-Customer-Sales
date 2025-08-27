@@ -43,19 +43,21 @@ Este projeto contém as seguintes pastas e arquivos:
 #
 ## ``📈 Etapas Realizadas``
 
-- __Importação e Limpeza dos Dados(Python, SQL)__
+- ``Importação e Limpeza dos Dados(Python, SQL)``
 <p align="center">
   <img src="imagem/Importação e Limpeza dos Dado.png" alt="Importação e Limpeza dos Dado" width="1200">
 </p>
 
+# 
 
-- __Visualização dos Dados (Power BI, Deshboard)__
+- ``Visualização dos Dados (Power BI, Deshboard)``
 <p align="center">
   <img src="imagem/Desh.gif" alt="Deshboard Power BI" width="1200">
 </p>
 
+#
 
-- __Modelagem Dados__
+- ``Modelagem Dados``
 <p align="center">
   <img src="imagem/Modelage Dados.gif" alt="Modelagem de dados Power BI" width="500">
 </p>
