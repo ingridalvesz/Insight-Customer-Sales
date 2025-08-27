@@ -44,10 +44,14 @@ Este projeto contém as seguintes pastas e arquivos:
 ## ``📈 Etapas Realizadas``
 
 - __Importação e Limpeza dos Dados(Python, SQL)__
+<p align="center">
+  <img src="imagem/Importação e Limpeza dos Dado.png" alt="Importação e Limpeza dos Dado" width="1200">
+</p>
+
 
 - __Visualização dos Dados (Power BI, Deshboard)__
 <p align="center">
-  <img src="imagem/Desh.gif" alt="Modelagem de dados Power BI" width="1200">
+  <img src="imagem/Desh.gif" alt="Deshboard Power BI" width="1200">
 </p>
 
 
@@ -60,8 +64,8 @@ Este projeto contém as seguintes pastas e arquivos:
 A modelagem de dados desenvolvida no Power BI foi estruturada no formato estrela, com a tabela fato no centro e tabelas dimensão conectadas a ela:
 - Fato_Vendas: concentra os principais indicadores do negócio, como valor total, quantidade de itens, cashback, frete e avaliações das compras.
 - Dim_Cliente: traz informações demográficas e geográficas dos clientes, como idade, faixa etária, gênero, cidade, estado e região.
-- Dim_Produto: organiza os produtos vendidos por categoria e meio de pagamento.
-- Dim_Tempo: permite análises temporais, considerando datas completas, ano, mês, dia, semana e flag de fim de semana.
+- Dim_Produto: organiza os produtos vendidos por categoria, id do produto e meio de pagamento.
+- Dim_Tempo: permite análises temporais, considerando datas completas, ano, mês, semana e dia.
 
 
 #
