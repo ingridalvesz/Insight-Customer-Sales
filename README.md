@@ -59,7 +59,7 @@ Este projeto contém as seguintes pastas e arquivos:
 
 - ``Modelagem Dados``
 <p align="center">
-  <img src="imagem/Modelage Dados.gif" alt="Modelagem de dados Power BI" width="500">
+  <img src="imagem/Modelagem de Dados.png" alt="Modelagem de dados Power BI" width="1200">
 </p>
 
 #link para o deshboard
