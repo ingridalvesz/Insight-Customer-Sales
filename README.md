@@ -17,15 +17,15 @@ Nos arquivos do repositório, você também encontrará uma apresentação com o
 Este projeto contém as seguintes pastas e arquivos:
 
 ### 📂 dados
-- **📂 raw** Pasta com dados iniciais da análise.
+- **📂 raw** - Pasta com dados iniciais da análise.
   - 🗎 `dadoscliente.csv`
   - 🗎 `dadosvendas.csv`
-- **📂 refiend** Pasta com dados dimencionais da análise.
+- **📂 refiend** - Pasta com dados dimencionais da análise.
   - 🗄️ `dim_cliente.parquet`
   - 🗄️ `dim_produto.parquet`
   - 🗄️ `dim_tempo.parquet`
   - 🗄️ `fato_vendas.parquet`
-- **📂 trusted** Pasta com dados dimencionais da análise.
+- **📂 trusted** - Pasta com dados dimencionais da análise.
   - 🗄️ `fato_clientes.parquet`
 
 ### 📂 imagem
