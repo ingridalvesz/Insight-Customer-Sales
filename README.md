@@ -17,29 +17,42 @@ Nos arquivos do repositório, você também encontrará uma apresentação com o
 Este projeto contém as seguintes pastas e arquivos:
 
 ### 📂 dados
-- **Descrição:** Pasta com os dados utilizados na análise.
+- **📂 raw** Pasta com dados iniciais da análise.
   - 🗎 `dadoscliente.csv`
   - 🗎 `dadosvendas.csv`
+- **📂 refiend** Pasta com dados dimencionais da análise.
+  - 🗄️ `dim_cliente.parquet`
+  - 🗄️ `dim_produto.parquet`
+  - 🗄️ `dim_tempo.parquet`
+  - 🗄️ `fato_vendas.parquet`
+- **📂 trusted** Pasta com dados dimencionais da análise.
+  - 🗄️ `fato_clientes.parquet`
 
 ### 📂 imagem
-- **Descrição:** Pasta com imagens relacionadas a esta análise.
-  - 🗎 `faturamento_por_categoria.png`
+- Pasta com os arquivos imagens relacionadas a esta análise.
+  - 🗎 `Desh.gif`
+  - 🗎 `Importação e Limpeza dos Dado.png`
+  - 🗎 `Mercatto Brasil.png`
+  - 🗎 `Modelagem de Dados.png`
 
 ### 📂 notebooks
-- **Descrição:** Pasta com o arquivo Notebook que contém toda a análise.
+- Pasta com o arquivo Notebook que contém toda a análise.
   - 🗎 `data_analysis_sql.ipynb`
 
 ### 📂 scripts
-- **Descrição:** Pasta com arquivos dimensionais da análise.
+- **Descrição:** Pasta com arquivos Python dimensionais da análise.
+  - 🗎 `config.py`
   - 🗎 `dimensional.py`
+  - 🗎 `ingestion.py`
   - 🗎 `pipeline.py`
+  - 🗎 `processing.py`
 
 ##### 🗎 .gitignore
-- **Descrição:** Arquivo para serem ignorados do GtiHub.
+- Arquivo para serem ignorados do GtiHub.
 ##### 🗎 README.md
-- **Descrição:** Arquivo para descrever o trabalho dessa análise.
+- Arquivo para descrever o trabalho dessa análise.
 ##### 🗎 requirements.txt
-- **Descrição:** Arquivo com as bibliotecas importadas do projeto.
+- Arquivo com as bibliotecas importadas do projeto.
 #
 ## ``📈 Etapas Realizadas``
 
@@ -55,6 +68,8 @@ Este projeto contém as seguintes pastas e arquivos:
   <img src="imagem/Desh.gif" alt="Deshboard Power BI" width="1200">
 </p>
 
+# Link para o Deshboard: https://app.powerbi.com/view?r=eyJrIjoiM2M0ZWJmYjAtNTc1ZC00YjU5LWFlNmYtZGFhZmQ3MDZlNjJmIiwidCI6IjYzNjFlM2I3LWZmNTEtNGE0My1hOGZjLTIyYjkzZWFkYTNlNiJ9
+
 #
 
 - ``Modelagem Dados``
@@ -62,7 +77,6 @@ Este projeto contém as seguintes pastas e arquivos:
   <img src="imagem/Modelagem de Dados.png" alt="Modelagem de dados Power BI" width="1200">
 </p>
 
-#link para o deshboard
 
 A modelagem de dados desenvolvida no Power BI foi estruturada no formato estrela, com a tabela fato no centro e tabelas dimensão conectadas a ela:
 - Fato_Vendas: concentra os principais indicadores do negócio, como valor total, quantidade de itens, cashback, frete e avaliações das compras.
@@ -85,6 +99,5 @@ A modelagem de dados desenvolvida no Power BI foi estruturada no formato estrela
 >- __Scikit-learn__
 #
 
-## ``Aprasentção do Projeto (PDF)``
+## ``Apresentção do Projeto (PDF)``
 
-##apresentação PDF (link)
