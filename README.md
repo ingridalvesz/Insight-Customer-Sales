@@ -68,7 +68,7 @@ Este projeto contém as seguintes pastas e arquivos:
   <img src="imagem/Desh.gif" alt="Deshboard Power BI" width="1200">
 </p>
 
-## Link para o Deshboard: https://app.powerbi.com/view?r=eyJrIjoiM2M0ZWJmYjAtNTc1ZC00YjU5LWFlNmYtZGFhZmQ3MDZlNjJmIiwidCI6IjYzNjFlM2I3LWZmNTEtNGE0My1hOGZjLTIyYjkzZWFkYTNlNiJ9
+[🔗 Link para o Deshboard](https://app.powerbi.com/view?r=eyJrIjoiM2M0ZWJmYjAtNTc1ZC00YjU5LWFlNmYtZGFhZmQ3MDZlNjJmIiwidCI6IjYzNjFlM2I3LWZmNTEtNGE0My1hOGZjLTIyYjkzZWFkYTNlNiJ9)
 
 #
 
@@ -101,4 +101,4 @@ A modelagem de dados desenvolvida no Power BI foi estruturada no formato estrela
 
 ## ``Apresentção do Projeto (PDF)``
 
-## Apresentação em PDF: https://drive.google.com/file/d/1zKYLIAYgOh5PxX15pV4ympe5NWS6FhuK/view?usp=sharing
+## [🔗 Link da Apresentação em PDF](https://drive.google.com/file/d/1zKYLIAYgOh5PxX15pV4ympe5NWS6FhuK/view?usp=sharing)
