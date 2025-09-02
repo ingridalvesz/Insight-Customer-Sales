@@ -101,4 +101,4 @@ A modelagem de dados desenvolvida no Power BI foi estruturada no formato estrela
 
 ## ``Apresentção do Projeto (PDF)``
 
-### [🔗 Link da Apresentação em PDF](https://drive.google.com/file/d/1zKYLIAYgOh5PxX15pV4ympe5NWS6FhuK/view?usp=sharing)
+### [🔗 Link da Apresentação em PDF](https://drive.google.com/file/d/1XCxruLSDQ4j1ajAyVXW3ZvCit4gr6nns/view?usp=sharing)
